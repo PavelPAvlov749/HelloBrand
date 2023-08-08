@@ -1,0 +1,218 @@
+.top-section {
+    background-image: url("../assets/Zeezotje-51.png");
+    padding: 50px 10% 0 10%;
+    padding-bottom: 140px;
+    color: white;
+
+
+}
+.nav__wrapper {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav__links-list {
+    display: flex;
+    gap: 45px;
+    justify-self: center;
+}
+
+.nav__link {
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav__link:hover {
+    color: rgb(73, 73, 216);
+    transition: all 0.7s ease;
+}
+.nav__tel-container {
+    justify-self: right;
+}
+
+.nav__logo {
+    height: 45px;
+    width: 220px;
+    object-fit: contain;
+}
+
+.top-section__open-time-tittle {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.top-section__tittle {
+    width: 100%;
+    font-size: 58px;
+    font-weight: 800;
+}
+
+.top-section__menu-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    border-radius: 0px;
+    border: none;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(58, 69, 116);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    align-self: center;
+    
+}
+
+/* BUTTON HOVER */
+.button:hover {
+    background-color: rgb(73, 100, 219);
+    color: rgb(21, 21, 21);
+    transition: all 0.5s ease;
+}
+
+.menu-container__social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0%;
+    width: 300px;
+
+}
+
+.menu-container__social-links li {
+    border: 1px solid white;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+
+}
+
+/* SOCIAL LINKS HOVER EFFECT */
+.menu-container__social-links li:hover {
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.menu-container__social-links li a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container__social-links li a:hover {
+    color: black;
+    transition: all 0.5s ease;
+}
+
+
+/* STYLE BREAKPOINTS */
+@media (max-width:1376px) {
+    .top-section {
+        padding: 50px 10px;
+    }
+
+    .top-section__content-container {
+        padding: 0 25px;
+
+    }
+
+}
+
+@media(max-width:940px) {
+    .nav__logo {
+        width: 130px;
+        height: 30px;
+    }
+
+}
+
+@media(max-width:750px) {
+    .top-section {
+        height: 100vh;
+    }
+
+    .top-section__content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .top-section__open-time-tittle {
+        align-self: flex-start;
+    }
+
+    .nav__wrapper {
+        flex-direction: row-reverse;
+    }
+
+    .nav__wrapper {
+        margin: 20px 0;
+    }
+
+    .nav__logo {
+        width: 150px;
+        height: 50px;
+    }
+
+    .top-section__tittle {
+        font-size: 45px;
+    }
+
+    .nav__tel-container {
+        display: none;
+    }
+
+    .nav__links-list {
+        display: none;
+    }
+
+    .nav__link {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:575px) {
+    .top-section__menu-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-section__content-container ul {
+        padding: 40px 0;
+        width: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .menu-container__social-links li {
+        margin: 0%;
+
+    }
+
+    .top-section__tittle {
+        font-size: 30px;
+
+    }
+
+    .nav__wrapper {
+        margin-bottom: 20px;
+    }
+
+    .top-section {
+        padding-top: 10px;
+    }
+}

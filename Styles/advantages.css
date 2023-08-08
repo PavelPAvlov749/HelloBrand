@@ -1,0 +1,20 @@
+.quote-container{
+    background-color: rgb(58, 69, 116);
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    height: 782px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.advantages-container__content {
+    width: 60%;
+}
+#quote-icon{
+    width: 83px;
+    height: 58px;
+
+}

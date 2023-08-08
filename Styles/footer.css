@@ -1,0 +1,98 @@
+.map {
+    width: 60%;
+    height: 500px;
+    margin: 0% auto;
+    background-size: contain;
+    background-image: url("../assets/Rectangle\ 653.png");
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 65%;
+    margin: 0% auto;
+    padding: 20px 0 20px 0;
+    text-align: center;
+
+}
+
+footer img {
+    width: 269px;
+    height: 55px;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.footer__social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+.footer__social-links li {
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social-links a {
+    color: black;
+}
+
+
+
+@media(max-width : 1100px) {}
+
+@media(max-width:750px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: max-content;
+    }
+
+    footer nav {
+        padding: 30px 0 30px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__social-links {
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer__social-links li {
+        margin: 0%;
+    }
+
+    #back-swipe {
+        display: none;
+    }
+
+    #forward-swipe {
+        display: none;
+    }
+
+    .swiper-slide img {
+        width: 200px;
+        height: auto;
+    }
+
+    .map {
+        width: 100%;
+    }
+}

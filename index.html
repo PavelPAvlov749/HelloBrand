@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>`T ZEEZOTJE</title>
+    <!-- IMPORT STYLES -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./Styles/top-secrion.css">
+    <link rel="stylesheet" href="./Styles/scheldue.css">
+    <link rel="stylesheet" href="./Styles/advantages.css">
+    <link rel="stylesheet" href="./Styles/lekker-ettem.css">
+    <link rel="stylesheet" href="./Styles/style-reset.css">
+    <link rel="stylesheet" href="./Styles/contacts.css">
+    <link rel="stylesheet" href="./Styles/reset.css">
+    <link rel="stylesheet" href="./Styles/burger.css">
+    <link rel="stylesheet" href="./Styles/galery.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/modal_window.css">
+    <!-- INCLUDING SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- IMPORT SWIPER CONFIG -->
+    <script src="./index.js" defer></script>
+
+    <!-- IMPORT SWIPER STYLES CSS-->
+    <link rel="stylesheet" href="./Styles/swiperStyles.css">
+</head>
+
+
+<body>
+    <!-- MODAL WINDOW -->
+    <section class="modal_window hide">
+        <div class="modal_window__overlay">
+            <form action="submit" name="form">
+                <button type="button" class="close_modal_window_btn">Close</button>
+                <input type="text" placeholder="Type your telephone" name="tel">
+                <input type="text" placeholder="Type your name " name="name">
+                <input type="number" placeholder="Number of persons" name="person_count">
+                <button type="submit" class="modal-window__form__submit-btn" >Reserve</button>
+            </form> 
+        </div>
+
+    </section>
+    <!-- TOP SECTION -->
+    <section class="top-section">
+        <div class="top-section__content-container">
+            <header>
+                <nav class="nav__wrapper">
+                    <img src="./assets/NAAM1.png" class="nav__logo"></img>
+                    <ul class="nav__links-list">
+                        <li class="nav__item">
+                            <a href="#map" class="nav__link">À la carte</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#wine-map" class="nav__link">Wijnkaart</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#lunch-menu" class="nav__link">Lunchmenu</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__tel-container">
+                        <img src="./assets/Group 46.svg" class="nav__tel-container_tel-icon" alt="">
+                        <a href="tel:+32 9 282 57 25">+32 9 282 57 25"</a>
+                    </div>
+                    <!-- BURGER MENU BUTTON DISPLAY NONE ON LARGE SCREENS -->
+                    <nav role="navigation">
+                        <div id="menuToggle">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <!-- LINKS LIST -->
+
+                            <ul id="menu">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">À la carte</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Wijnkaart</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Lunchmenu</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </nav>
+                </nav>
+            </header>
+            <section class="top-section__content">
+                <span class="top-section__open-time-tittle">OPEN EVERYDAY 6AM - 9PM</span>
+                <h1 class="top-section__tittle">A bad day with lunch is better than a good day without it.</h1>
+                <div class="top-section__menu-container">
+                    <button class="button" id="reserve_button">Reserve a table</button>
+                    <ul class="menu-container__social-links">
+                        <li class="menu-container__social-links-item">
+                            <a href="">Fb</a>
+                        </li>
+                        <li class="menu-container__social-links-item">
+                            <a href="">lg</a>
+                        </li>
+                        <li class="menu-container__social-links-item">
+                            <a href="">Tw</a>
+                        </li>
+                        <li class="menu-container__social-links-item">
+                            <a href="">Yt</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </section>
+    <!-- LUNCH MENU -->
+    <section class="schedule-container" id="lunch-menu">
+        <ul class="schedule-container__menu">
+            <li class="schedule-container__menu__item">
+                <h3>
+                    Woensdag 12/01
+                </h3>
+
+                <span>
+                    Salade met Serrano
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    Steak Tartaar
+                </span>
+
+            </li>
+            <li class="schedule-container__menu__item">
+                <h3>
+                    Donderdag 13/01
+                </h3>
+
+                <span>
+                    Toast Roquefort
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    Penne met Kip en Prei
+                </span>
+
+            </li>
+            <li class="schedule-container__menu__item">
+                <h3>
+                    Vrijdag 14/01
+                </h3>
+
+                <span>Verrassing van de Chef
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    Penne met Kip en Prei
+
+                    </div>
+            </li>
+            <li class="schedule-container__menu__item">
+                <h3>
+                    Vrijdag 15/01
+                </h3>
+
+                <span>Verrassing van de Chef
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    Penne met Kip en Prei
+                </span>
+
+            </li>
+            <li class="schedule-container__menu__item">
+                <h3>
+                    Vrijdag 16/01
+                </h3>
+
+                <span>Verrassing van de Chef
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    <div class="schedule-container__menu__item__dots"></div>
+                    Penne met Kip en Prei
+                </span>
+
+            </li>
+        </ul>
+        <figure class="schedule-container__photos">
+            <div class="square"></div>
+            <img src="./assets/Rectangle 77.png" id="pic_1" alt="">
+            <img src="./assets/Rectangle 80.png" id="pic_2" alt="">
+        </figure>
+    </section>
+    <!-- QUOTE SLIDER -->
+    <section class="quote-container" id="quote-container">
+        <div class="quote-swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                    <div class="slide quoteslide">
+                        <img src="./assets/icon.png" id="quote-icon" alt="">
+
+                        <h2>Goede service, lekker eten, toffe ambiance<h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam
+                                    et justo duo &nbspdolores et ea rebum. Stet clita kasd gubergren.</p>
+                                <blockquote>ALAIN HEYNDRICKX</blockquote>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide quoteslide">
+                        <img src="./assets/icon.png" id="quote-icon" alt="">
+                        <h2>Goede service, lekker eten, toffe ambiance<h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam
+                                    et justo duo &nbspdolores et ea rebum. Stet clita kasd gubergren.</p>
+                                <blockquote>ALAIN HEYNDRICKX</blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev "></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- WINE MAP  -->
+    <section class="wine_map">
+        <div id="wine-map"></div>
+        <ul class="wine_map__list">
+            <li class="wine_map__list__item-1">
+                <article class="wine_map__item-text">
+                    <h2>LEKKER ETEN</h2>
+                    <div class="wine-map__item__line"></div>
+                    <p class="wine_map__item-text_paragraph">
+                        Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen.
+                        Dat is onze filosofie, goed eten in een goede sfeer.
+                    </p>
+                    <img src="" alt="">
+                </article>
+                <figure>
+                    <img src="./assets/Image.png" class="food-photo" alt="">
+                </figure>
+
+            </li>
+            <li class="wine_map__list__item-2">
+                <article class="wine_map__item-2-text">
+                    <h2>TOFFE AMBIANCE</h2>
+                    <div class="wine-map__item__line"></div>
+                    <p class="wine_map__item-text_paragraph">
+                        Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een onvergetelijke
+                        cocktail,
+                        een goed gesprek en lekker eten.
+                    </p>
+                    <img src="" alt="">
+                </article>
+                <figure>
+                    <img src="./assets/Image(1).png" class="food-photo" valt="">
+                </figure>
+            </li>
+            <li class="wine_map__list__item-1">
+                <article class="wine_map__item-text">
+                    <h2>LEKKERE COCKTAILS</h2>
+                    <div class="wine-map__item__line"></div>
+                    <p class="wine_map__item-text_paragraph">
+                        Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een onvergetelijke
+                        cocktail,
+                        een goed gesprek en lekker eten.
+                    </p>
+                    <img src="" alt="">
+                </article>
+                <figure>
+                    <img src="./assets/Image(2).png" class="food-photo" alt="">
+                </figure>
+            </li>
+
+        </ul>
+    </section>
+    <!-- PHOTO GALERY -->
+    <section class="galery-container" id="galery">
+        <div class="galery-container__blue-box">
+            <div class="galery-container__content">
+                <article>
+                    <h2>Sfeerfoto's</h2>
+                    <p>
+                        De beste manier om de sfeer te ervaren is eens langskomen.
+                        In tussentijd hebben we hier alvast wat foto’s voor je klaar.
+                    </p>
+                </article>
+
+                <div class="galery-container__content__swiper-navigation">
+                    <img src="./assets/arrow-up.png" id="back-swipe">
+                    <img src="./assets/arrow-up.png" id="forward-swipe" alt="">
+                </div>
+            </div>
+
+            <section class="galery-container__slider">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="galery_image" src="./assets/'t Zeezotje-3 1(1).png"
+                                alt=""></div>
+                        <div class="swiper-slide"><img class="galery_image" src="./assets//'t Zeezotje-4 1.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img class="galery_image" src="./assets/'t Zeezotje-6 1(1).png"
+                                alt=""></div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+    <!-- CONTACTS -->
+    <section class="contacts-container" id="contacts">
+        <section class="contacts-content">
+            <h2>Contacts</h2>
+            <ul class="contacts-content__contacts-list">
+                <li class="contacts-content__contacts-list_item">
+                    <img src="./assets/tel.svg" alt="">
+                    <p>
+                        Telephone number
+                        <a href="tel:+32 9 282 57 25">+32 9 282 57 25</a>
+
+                    </p>
+                    <br>
+                </li>
+                <li class="contacts-content__contacts-list_item">
+                    <img src="./assets/sms.svg" alt="">
+                    <p>Email
+                        <br>
+                        <a href="mail:info@email.com">info@email.com</a>
+                    </p>
+
+                </li>
+                <li class="contacts-content__contacts-list_item">
+                    <img src="./assets/clock.svg" alt="">
+                    <p>Opening Hours
+                        <br>
+                        <span>Everyday from 6 AM - 9 PM</span>
+                    </p>
+
+                </li>
+                <li class="contacts-content__contacts-list_item">
+                    <img src="./assets/map.svg" alt="">
+                    <p>Map Street
+                        <br>
+                        <span>Jl. Raya Surabaya 2787</span>
+                    </p>
+
+                </li>
+            </ul>
+        </section>
+        <section class="questions_container">
+            <h2>Have any questions?</h2>
+            <Form name="request">
+                <section class="questions_container__top-inputs">
+                    <div class="questions_container__input-container">
+                        <span>Name</span>
+                        <input type="text" id="name" placeholder="Input your name">
+                    </div>
+                    <div class="questions_container__input-container">
+                        <span>Name</span>
+                        <input type="text" id="email" placeholder="Input your email">
+                    </div>
+                </section>
+                <div class="questions_container__textarea-container">
+                    <span>Speciale Request</span>
+                    <textarea name="Request" placeholder="Input your special request" id="request" cols="30"
+                        rows="10"></textarea>
+                    <button type="submit" id="submit">Send</button>
+                </div>
+
+            </Form>
+        </section>
+    </section>
+
+    <!-- MAP -->
+    <div alt="" class="map" id="map"></div>
+    <!-- FOOTER -->
+    <footer>
+        <img src="./assets/NAAM 2.png" alt="">
+        <nav>
+            <ul class="footer__social-links">
+                <li class="menu-container__social-links-item">
+                    <a href="">Fb</a>
+                </li>
+                <li class="menu-container__social-links-item">
+                    <a href="">lg</a>
+                </li>
+                <li class="menu-container__social-links-item">
+                    <a href="">Tw</a>
+                </li>
+                <li class="menu-container__social-links-item">
+                    <a href="">Yt</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

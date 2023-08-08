@@ -1,0 +1,80 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.quote-swiper {
+    width: 70%;
+    height: 100%;
+}
+
+.quoteslide {
+    padding: 20px;
+}
+
+.quoteslide h2 {
+    max-width: 782px;
+    text-align: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide h2 {
+    font-size: 36px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 74px;
+    color: #d3b47f;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.swiper-slide p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    color: white;
+}
+
+.galery_image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 969px;
+    max-height: 646px;
+    object-fit: cover;
+}
+
+
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-button-prev,.swiper-button-next{
+    color: white;
+}
+@media(max-width:1250px) {
+    .quote-swiper {
+        width: 100%;
+    }
+}
+@media(max-width:750px) {
+    .swiper-slide img {
+        width: 97%;
+        height: 97%;
+        object-fit: contain;
+    }
+
+    .swiper-pagination {
+        display: block;
+    }
+}

@@ -1,0 +1,232 @@
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 101px auto;
+}
+
+.contacts-container a {
+    color: black;
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+}
+
+.contacts-content h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    margin: 0%;
+
+}
+
+.contacts-content__contacts-list_item img {
+    background-color: #D3B47F;
+    width: 64px;
+    border-radius: 100px;
+    padding: 21px;
+
+}
+
+.contacts-content__contacts-list {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.contacts-content__contacts-list_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+
+}
+
+.contacts-content__contacts-list_item p {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+
+}
+
+.contacts-content__contacts-list_item a {
+    color: #2E2E2E;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+
+
+}
+
+.contacts-content__contacts-list_item span {
+    color: #2E2E2E;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+
+}
+
+.questions_container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.questions_container h2 {
+    color: #000;
+    margin: 0%;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+}
+
+.questions_container__top-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.questions_container__input-container span {
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+.questions_container__top-inputs input {
+    margin-top: 10px;
+    height: 80px;
+    padding: 0 16px;
+    width: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid #CCC;
+}
+
+.questions_container__input-container {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.questions_container__textarea-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.questions_container__textarea-container textarea {
+    margin-top: 10px;
+    height: 125px;
+    padding: 28px 16px;
+    width: 100%;
+    resize: none;
+    transition: all 0.3s ease;
+}
+
+.questions_container__textarea-container span {
+
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+.questions_container__textarea-container button {
+    width: 270px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 0;
+    margin-top: 20px;
+    background-color: #3A4574;
+    color: white;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+
+
+@media (max-width : 1020px) {
+    .contacts-container {
+        width: 95%;
+    }
+
+    .questions_container h2 {
+        line-height: 1;
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .questions_container__top-inputs {
+        flex-direction: column;
+    }
+
+    .questions_container__input-container {
+        width: 100%;
+    }
+
+    .questions_container__top-inputs input {
+        width: 100%;
+    }
+
+    .contacts-content h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width : 750px) {
+    .contacts-container {
+        flex-direction: column;
+        margin-top: 0%;
+    }
+
+    .contacts-container h2 ,.contacts-content__contacts-list,.contacts-content,
+    .contacts-content__contacts-list_item ,.contacts-content__contacts-list_item p , .questions_container {
+        width: 100%;
+    }
+
+    .contacts-content__contacts-list_item p {
+        margin: 0 0 0 20px;
+    }
+
+}
